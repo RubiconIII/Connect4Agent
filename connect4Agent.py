@@ -24,7 +24,7 @@ def evaluate(game_board, my_player_num):
     score = my_score - opponent_score #more positive means better for me
     return score
 
-#take all of the coords and check out three in either direction. Gets a point if empty. Gets 2 if filled with player of same type. Removes 2 and stops if finds opponent.
+#take all of the coords and check out three in either direction. Gets a point if empty. Gets 2 if filled with player of same type. Stops if finds opponent.
 def playerScore(player_coords, player_num, game_board, connect, empty_num):
     score = 0 
     coords_to_check = []
